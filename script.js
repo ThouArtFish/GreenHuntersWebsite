@@ -17,12 +17,15 @@ function onMarkerClick(e) {
     switch (e.latlng) {
         case park1.getLatLng():
             info.children[0].textContent = "Dean Gardens";
+            info.children[1].textContent = "Not Confirmed";
             break;
         case park2.getLatLng():
             info.children[0].textContent = "King George V Playing Field";
+            info.children[1].textContent = "Not Confirmed";
             break;
         case park3.getLatLng():
             info.children[0].textContent = "Cuckoo Park";
+            info.children[1].textContent = "Not Confirmed";
             break;
     }
 };
