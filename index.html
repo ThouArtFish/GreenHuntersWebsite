@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>Green Hunters</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+    </head>
+    <body>
+        <h1>Green Hunters</h1>
+        <ul id="desc">
+            <li>Take part in the events to increase the community goal!</li>
+            <li>Increasing the goal will decorate this page and make Ealing a greener place!</li>
+            <li>Anyone who contributes during the events will get a chance at a raffle for some great prizes!</li>
+        </ul> 
+        <h1>Community Goal</h1>
+        <div id="bar">
+            <div id="background_bar"></div>
+            <div id="foreground_bar"></div>
+            <div id="goal_percent">0%</div>
+        </div>
+        <h1>Event Locations</h1>
+        <div id="locations">
+            <div id="map"></div>
+            <div id="location_box">
+                <ul id="location_info">
+                    <li>location name</li>
+                    <li>location desc</li>
+                </ul>
+            </div>
+        </div>
+        <script type="module" src="script.js"></script>
+    </body>
+</html>
