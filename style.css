@@ -1,10 +1,15 @@
 body {
-    background-color: lightskyblue;
+    background-image: url('background.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed;
     padding: 5px;
     margin: 0px;
 }
 h1 {
     margin: auto;
+    padding: 15px;
     text-align: center;
     background-color: greenyellow;
     border-style: solid;
@@ -20,7 +25,7 @@ p {
     font: 1.2em sans-serif;
 }
 #bar {
-    padding: 15px;
+    padding: 40px;
     margin: auto;
     width: 600px;
     height: 25px;
@@ -58,10 +63,8 @@ p {
 }
 #location_box {
     background-color: chartreuse;
-    height: 400px;
-    width: 400px;
-}
-#location_info {
     text-align: left;
     font-size: x-large;
+    height: 400px;
+    width: 400px;
 }
