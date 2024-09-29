@@ -5,31 +5,21 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 const park1 = L.marker([51.51079905310003, -0.3203868166665128]).addTo(map);
-const park2 = L.marker([51.5062149420505, -0.3395800700750733]).addTo(map);
-const park3 = L.marker([51.51956852804899, -0.33588858862885373]).addTo(map);
 
 park1.bindPopup("W13 9LX");
-park2.bindPopup("W7 2NY");
-park3.bindPopup("W7 1NS");
 
 function onMarkerClick(e) {
     let info = document.getElementById("location_info");
-    switch (e.latlng) {
-        case park1.getLatLng():
-            info.children[0].textContent = "Dean Gardens";
-            info.children[1].textContent = "Not Confirmed";
-            break;
-        case park2.getLatLng():
-            info.children[0].textContent = "King George V Playing Field";
-            info.children[1].textContent = "Not Confirmed";
-            break;
-        case park3.getLatLng():
-            info.children[0].textContent = "Cuckoo Park";
-            info.children[1].textContent = "Not Confirmed";
-            break;
+    info.children[0].textContent = "Dean Gardens, Ealing";
+    info.children[1].textContent = "Saturday 5th October";
+    if (info.children.length == 2) {
+        let li1 = document.createElement("li");
+        let li2 = document.createElement("li");
+        li1.textContent = "11am - 3pm";
+        li2.textContent = "Make sure to bring your parents and read the rules!"
+        info.appendChild(li1);
+        info.appendChild(li2);
     }
 };
 
 park1.on("click", onMarkerClick);
-park2.on("click", onMarkerClick);
-park3.on("click", onMarkerClick);

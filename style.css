@@ -6,9 +6,9 @@ body {
     background-attachment: fixed;
     width: 100%;
 }
-h1 {
+h2 {
     margin: auto;
-    padding: 15px;
+    padding: 5px;
     text-align: center;
     background-color: greenyellow;
     border-style: solid;
@@ -50,7 +50,7 @@ p {
     text-align: left;
     font-size: x-large;
     background-color: transparent;
-    left: 25%;
+    left: 26%;
     width: 10%;
     height: 20px;
 }
@@ -61,7 +61,6 @@ p {
     text-align: left;
     font-size: x-large;
     padding: 10px;
-    gap: 10px;
     width: 100%;
 }
 #map {
@@ -70,6 +69,20 @@ p {
 }
 #location_box {
     background-color: chartreuse;
+    border-style: solid;
     height: 100%;
     width: 50%;
+}
+h3 {
+    text-align: center;
+}
+.info_boxes {
+    background-color: chartreuse;
+    border-style: solid;
+    text-align: center;
+    margin: 5px;
+}
+#green_hunters_info {
+    display: flex;
+    justify-content: center;
 }
